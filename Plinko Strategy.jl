@@ -7,6 +7,9 @@ using InteractiveUtils
 # ╔═╡ 711d78c7-d81d-44fa-947d-1eca054f1661
 using Plots, PlutoUI, HypertextLiteral
 
+# ╔═╡ 138295e8-fbe6-4bca-a72e-c1a8ceeaf6d4
+include("article-view.jl")
+
 # ╔═╡ d1056174-ca79-486e-be2d-defa429000ad
 html"""
 <h1 style="font-size: 1.5em">What's the best plinko strategy in <i>The Price is Right</i>?</h1>
@@ -109,8 +112,14 @@ bar(r, [E(modshift(n, rewards, s)) for s ∈ r]; title="Expected reward vs. puck
 # ╔═╡ a4feeff0-f7d9-48c1-ae51-4b0a9eaa7345
 [E(modshift(n, rewards, s)) for s ∈ r];
 
-# ╔═╡ 138295e8-fbe6-4bca-a72e-c1a8ceeaf6d4
-include("article-view.jl")
+# ╔═╡ f03c9987-b1a9-44f9-88bd-6eec68eb66b1
+html"""
+<style>
+	div > img {
+		margin: 0 auto;
+	}
+</style>
+"""
 
 # ╔═╡ 00000000-0000-0000-0000-000000000001
 PLUTO_PROJECT_TOML_CONTENTS = """
@@ -1179,5 +1188,6 @@ version = "1.4.1+0"
 # ╟─a4feeff0-f7d9-48c1-ae51-4b0a9eaa7345
 # ╟─711d78c7-d81d-44fa-947d-1eca054f1661
 # ╟─138295e8-fbe6-4bca-a72e-c1a8ceeaf6d4
+# ╠═f03c9987-b1a9-44f9-88bd-6eec68eb66b1
 # ╟─00000000-0000-0000-0000-000000000001
 # ╟─00000000-0000-0000-0000-000000000002
