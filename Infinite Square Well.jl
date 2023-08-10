@@ -170,7 +170,7 @@ E(n, L) = (n^2 * π^2) / (2 * L^2)
 ψₜ(n, L) = (t) -> cos(-E(n, L)*t)
 
 # ╔═╡ bc8355d0-ae80-41a0-9261-bde5e20b71f9
-function plot_superposition_time_fn(L, t)
+function plot_superposition_time_fn(c, L, t)
 	f3 = plot(; xlims=(-0.2, L+0.2), ylims=(-5, 5))
 	plot_well!(f3, L)
 	custom_solution_time(x) = sum([c[n] * wavefunction(n, L)(x) * ψₜ(n, L)(t) for n ∈ 1:4])
@@ -180,7 +180,7 @@ end
 
 # ╔═╡ f3381b0e-2e82-4d52-be8e-90a25c425818
 anim = @animate for t ∈ 0:0.01:π/2
-    plot_superposition_time_fn(L, t)
+    plot_superposition_time_fn(c, L, t)
 end;
 
 # ╔═╡ 28bda2c1-d19b-4277-8998-121f2f083d0c
