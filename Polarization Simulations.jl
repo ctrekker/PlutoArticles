@@ -17,23 +17,8 @@ end
 # ╔═╡ db874869-873a-4939-9694-871ad7895cca
 using PlutoUI, Plots, LinearAlgebra, HypertextLiteral
 
-# ╔═╡ d3866d10-3d68-449b-b2b7-467e031ad9ef
-html"""
-<style>
-pluto-output h2 {
-	margin-top: 100px !important;
-}
-pluto-output {
-	font-size: 16pt;
-}
-pluto-editor.fullscreen main {
-	max-width: 1000px !important;
-	align-self: center !important;
-	margin-right: 0 !important;
-	# align-self: center !important;
-}
-</style>
-"""
+# ╔═╡ d2016b05-cbac-4181-8ba7-9761aa025164
+include("article-view.jl")
 
 # ╔═╡ 0d458a86-e179-4b61-9f56-10d727272437
 md"""
@@ -1421,7 +1406,6 @@ version = "1.4.1+0"
 """
 
 # ╔═╡ Cell order:
-# ╠═d3866d10-3d68-449b-b2b7-467e031ad9ef
 # ╟─0d458a86-e179-4b61-9f56-10d727272437
 # ╟─c1664472-a84b-4fd8-8044-b0e410b0486a
 # ╟─67b530b2-ffeb-440c-91d1-26af440a9980
@@ -1474,5 +1458,6 @@ version = "1.4.1+0"
 # ╟─374567f6-c8f5-471a-82bb-70fa584f81bc
 # ╟─d537ff81-2855-4f42-8c95-9414956df95f
 # ╟─a8d56745-0de1-46c7-ad3e-e5129a199557
+# ╟─d2016b05-cbac-4181-8ba7-9761aa025164
 # ╟─00000000-0000-0000-0000-000000000001
 # ╟─00000000-0000-0000-0000-000000000002

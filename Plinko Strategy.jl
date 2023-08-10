@@ -5,17 +5,17 @@ using Markdown
 using InteractiveUtils
 
 # ╔═╡ 711d78c7-d81d-44fa-947d-1eca054f1661
-using Plots
+using Plots, PlutoUI, HypertextLiteral
 
 # ╔═╡ d1056174-ca79-486e-be2d-defa429000ad
-md"""
-## What's the best plinko strategy in _The Price is Right_?
+html"""
+<h1 style="font-size: 1.5em">What's the best plinko strategy in <i>The Price is Right</i>?</h1>
 """
 
 # ╔═╡ 72f370eb-556e-470f-8d04-e6b562f21ce7
-html"""
-<img src="https://wwwimage-us.pplusstatic.com/base/files/dplinko.jpg"/>
-"""
+@htl("""
+	<div style="display: flex; justify-content: center">$(LocalResource("assets/plinko.jpg"))</div>
+""")
 
 # ╔═╡ 8cdd9e01-f7d5-4813-8f99-07a03e4617bc
 md"""
@@ -109,13 +109,20 @@ bar(r, [E(modshift(n, rewards, s)) for s ∈ r]; title="Expected reward vs. puck
 # ╔═╡ a4feeff0-f7d9-48c1-ae51-4b0a9eaa7345
 [E(modshift(n, rewards, s)) for s ∈ r];
 
+# ╔═╡ 138295e8-fbe6-4bca-a72e-c1a8ceeaf6d4
+include("article-view.jl")
+
 # ╔═╡ 00000000-0000-0000-0000-000000000001
 PLUTO_PROJECT_TOML_CONTENTS = """
 [deps]
+HypertextLiteral = "ac1192a8-f4b3-4bfe-ba22-af5b92cd3ab2"
 Plots = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
+PlutoUI = "7f904dfe-b85e-4ff6-b463-dae2292396a8"
 
 [compat]
+HypertextLiteral = "~0.9.4"
 Plots = "~1.38.15"
+PlutoUI = "~0.7.52"
 """
 
 # ╔═╡ 00000000-0000-0000-0000-000000000002
@@ -124,7 +131,13 @@ PLUTO_MANIFEST_TOML_CONTENTS = """
 
 julia_version = "1.9.1"
 manifest_format = "2.0"
-project_hash = "17fb63cafcbaaf7d5c3d78d4a3551b5dfdf327e9"
+project_hash = "4cd41465961be6404d54959372e107a0de761455"
+
+[[deps.AbstractPlutoDingetjes]]
+deps = ["Pkg"]
+git-tree-sha1 = "91bd53c39b9cbfb5ef4b015e8b582d344532bd0a"
+uuid = "6e696c72-6542-2067-7265-42206c756150"
+version = "1.2.0"
 
 [[deps.ArgTools]]
 uuid = "0dad84c5-d112-42e6-8d28-ef12dabb789f"
@@ -359,6 +372,24 @@ git-tree-sha1 = "129acf094d168394e80ee1dc4bc06ec835e510a3"
 uuid = "2e76f6c2-a576-52d4-95c1-20adfe4de566"
 version = "2.8.1+1"
 
+[[deps.Hyperscript]]
+deps = ["Test"]
+git-tree-sha1 = "8d511d5b81240fc8e6802386302675bdf47737b9"
+uuid = "47d2ed2b-36de-50cf-bf87-49c2cf4b8b91"
+version = "0.0.4"
+
+[[deps.HypertextLiteral]]
+deps = ["Tricks"]
+git-tree-sha1 = "c47c5fa4c5308f27ccaac35504858d8914e102f9"
+uuid = "ac1192a8-f4b3-4bfe-ba22-af5b92cd3ab2"
+version = "0.9.4"
+
+[[deps.IOCapture]]
+deps = ["Logging", "Random"]
+git-tree-sha1 = "d75853a0bdbfb1ac815478bacd89cd27b550ace6"
+uuid = "b5f81e59-6552-4d32-b1f0-c071b021bf89"
+version = "0.2.3"
+
 [[deps.InteractiveUtils]]
 deps = ["Markdown"]
 uuid = "b77e0a4c-d291-57a0-90e8-8db25a27a240"
@@ -528,6 +559,11 @@ git-tree-sha1 = "cedb76b37bc5a6c702ade66be44f831fa23c681e"
 uuid = "e6f89c97-d47a-5376-807f-9c37f3926c36"
 version = "1.0.0"
 
+[[deps.MIMEs]]
+git-tree-sha1 = "65f28ad4b594aebe22157d6fac869786a255b7eb"
+uuid = "6c6e2e6c-3030-632d-7369-2d6c69616d65"
+version = "0.1.4"
+
 [[deps.MacroTools]]
 deps = ["Markdown", "Random"]
 git-tree-sha1 = "42324d08725e200c23d4dfb549e0d5d89dede2d2"
@@ -680,6 +716,12 @@ version = "1.38.15"
     IJulia = "7073ff75-c697-5162-941a-fcdaad2a7d2a"
     ImageInTerminal = "d8c32880-2388-543b-8c61-d9f865259254"
     Unitful = "1986cc42-f94f-5a68-af5c-568840ba703d"
+
+[[deps.PlutoUI]]
+deps = ["AbstractPlutoDingetjes", "Base64", "ColorTypes", "Dates", "FixedPointNumbers", "Hyperscript", "HypertextLiteral", "IOCapture", "InteractiveUtils", "JSON", "Logging", "MIMEs", "Markdown", "Random", "Reexport", "URIs", "UUIDs"]
+git-tree-sha1 = "e47cd150dbe0443c3a3651bc5b9cbd5576ab75b7"
+uuid = "7f904dfe-b85e-4ff6-b463-dae2292396a8"
+version = "0.7.52"
 
 [[deps.PrecompileTools]]
 deps = ["Preferences"]
@@ -836,6 +878,11 @@ deps = ["Random", "Test"]
 git-tree-sha1 = "9a6ae7ed916312b41236fcef7e0af564ef934769"
 uuid = "3bb67fe8-82b1-5028-8e26-92a6c54297fa"
 version = "0.9.13"
+
+[[deps.Tricks]]
+git-tree-sha1 = "aadb748be58b492045b4f56166b5188aa63ce549"
+uuid = "410a4b4d-49e4-4fbc-ab6d-cb71b17b3775"
+version = "0.1.7"
 
 [[deps.URIs]]
 git-tree-sha1 = "074f993b0ca030848b897beff716d93aca60f06a"
@@ -1131,5 +1178,6 @@ version = "1.4.1+0"
 # ╟─78ee5c84-cce4-4aac-ac90-1d65a0407ae3
 # ╟─a4feeff0-f7d9-48c1-ae51-4b0a9eaa7345
 # ╟─711d78c7-d81d-44fa-947d-1eca054f1661
+# ╟─138295e8-fbe6-4bca-a72e-c1a8ceeaf6d4
 # ╟─00000000-0000-0000-0000-000000000001
 # ╟─00000000-0000-0000-0000-000000000002

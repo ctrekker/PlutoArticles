@@ -17,6 +17,9 @@ end
 # ╔═╡ b1697430-d9bd-40ef-aaa1-61ae93f8392a
 using Plots, PlutoUI, LinearAlgebra, Printf
 
+# ╔═╡ 7c59ef82-30f3-47b7-b1a4-e2d86cd68c6c
+include("article-view.jl")
+
 # ╔═╡ f9c54af0-ce43-11ec-132b-c7aa64d62fb1
 md"""
 # Infinite Square Well
@@ -1260,5 +1263,6 @@ version = "1.4.1+0"
 # ╠═b638ca63-8fb9-400f-8f8b-7af5daa5f5fa
 # ╠═3421a4f7-54d3-4d67-aa00-f28f7a8487a0
 # ╠═62e003b2-6912-4aa7-abb5-3e14f8c25b81
+# ╟─7c59ef82-30f3-47b7-b1a4-e2d86cd68c6c
 # ╟─00000000-0000-0000-0000-000000000001
 # ╟─00000000-0000-0000-0000-000000000002
