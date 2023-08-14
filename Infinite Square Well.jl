@@ -2,9 +2,9 @@
 # v0.19.27
 
 #> [frontmatter]
-#> Category = "Physics"
 #> title = "Infinite Square Well"
 #> tags = ["Physics"]
+#> category = "Physics"
 
 using Markdown
 using InteractiveUtils

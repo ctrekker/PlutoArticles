@@ -2,8 +2,8 @@
 # v0.19.27
 
 #> [frontmatter]
-#> Category = "Physics"
 #> title = "Simulating polarizing 3D glasses"
+#> category = "Physics"
 
 using Markdown
 using InteractiveUtils

@@ -3,6 +3,7 @@
 
 #> [frontmatter]
 #> title = "Connor's Interactive Articles"
+#> sidebar = "false"
 
 using Markdown
 using InteractiveUtils
@@ -24,7 +25,7 @@ end
 # ╔═╡ 106c8995-9e6a-4017-9bbd-36ec9d54e154
 article_list = Article[
 	Article("Infinite Square Well", "Infinite Square Well.jl"),
-	Article("Simulating Polarizing 3D Glasses", "Polarization Simulation.jl"),
+	Article("Simulating Polarizing 3D Glasses", "Polarization Simulations.jl"),
 	Article("What's the best Plinko strategy?", "Plinko Strategy.jl")
 ];
 

@@ -2,8 +2,8 @@
 # v0.19.27
 
 #> [frontmatter]
-#> Category = "Mathematics"
 #> title = "What's the best Plinko strategy?"
+#> category = "Mathematics"
 
 using Markdown
 using InteractiveUtils
