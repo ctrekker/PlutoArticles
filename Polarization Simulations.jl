@@ -19,10 +19,10 @@ macro bind(def, element)
 end
 
 # ╔═╡ db874869-873a-4939-9694-871ad7895cca
-using PlutoUI, Plots, LinearAlgebra, HypertextLiteral
+using PlutoUI, Plots, LinearAlgebra, HypertextLiteral, PlutoArticles
 
-# ╔═╡ d2016b05-cbac-4181-8ba7-9761aa025164
-include("article-view.jl")
+# ╔═╡ 167e90e2-65e6-42b0-a94a-0ae74cef1ddd
+article()
 
 # ╔═╡ 0d458a86-e179-4b61-9f56-10d727272437
 md"""
@@ -30,6 +30,11 @@ md"""
 
 In this article we'll develop an interface for building up compositions of polarization filters, with the goal of better understanding how modern 3D glasses work!
 """
+
+# ╔═╡ d0ea8bc7-222c-47d8-b414-e1d7b5a47b36
+@htl("""
+<b>Word Count</b>: $(WordCount())
+""")
 
 # ╔═╡ c1664472-a84b-4fd8-8044-b0e410b0486a
 md"""
@@ -380,11 +385,13 @@ PLUTO_PROJECT_TOML_CONTENTS = """
 HypertextLiteral = "ac1192a8-f4b3-4bfe-ba22-af5b92cd3ab2"
 LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
 Plots = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
+PlutoArticles = "f6bf48b7-86ff-4272-ae2d-6d953707ade4"
 PlutoUI = "7f904dfe-b85e-4ff6-b463-dae2292396a8"
 
 [compat]
 HypertextLiteral = "~0.9.4"
 Plots = "~1.29.0"
+PlutoArticles = "~0.0.1"
 PlutoUI = "~0.7.39"
 """
 
@@ -394,7 +401,7 @@ PLUTO_MANIFEST_TOML_CONTENTS = """
 
 julia_version = "1.9.0"
 manifest_format = "2.0"
-project_hash = "e038dd2eb53935abb16d202f27c658f46ec1d741"
+project_hash = "4ce9948e8f39a0d2aa8a1f0caea7ba61e15eba21"
 
 [[deps.AbstractPlutoDingetjes]]
 deps = ["Pkg"]
@@ -976,6 +983,12 @@ git-tree-sha1 = "9e42de869561d6bdf8602c57ec557d43538a92f0"
 uuid = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
 version = "1.29.1"
 
+[[deps.PlutoArticles]]
+deps = ["AbstractPlutoDingetjes", "HypertextLiteral", "InteractiveUtils", "Markdown", "Reexport"]
+git-tree-sha1 = "df61ed14959da1e0f6b8e25f63db5ab6ba071125"
+uuid = "f6bf48b7-86ff-4272-ae2d-6d953707ade4"
+version = "0.0.1"
+
 [[deps.PlutoUI]]
 deps = ["AbstractPlutoDingetjes", "Base64", "ColorTypes", "Dates", "FixedPointNumbers", "Hyperscript", "HypertextLiteral", "IOCapture", "InteractiveUtils", "JSON", "Logging", "MIMEs", "Markdown", "Random", "Reexport", "URIs", "UUIDs"]
 git-tree-sha1 = "b478a748be27bd2f2c73a7690da219d0844db305"
@@ -1410,7 +1423,9 @@ version = "1.4.1+0"
 """
 
 # ╔═╡ Cell order:
+# ╟─167e90e2-65e6-42b0-a94a-0ae74cef1ddd
 # ╟─0d458a86-e179-4b61-9f56-10d727272437
+# ╟─d0ea8bc7-222c-47d8-b414-e1d7b5a47b36
 # ╟─c1664472-a84b-4fd8-8044-b0e410b0486a
 # ╟─67b530b2-ffeb-440c-91d1-26af440a9980
 # ╟─42f2e4d0-c10a-44da-bedc-6165d127bebe
@@ -1462,6 +1477,5 @@ version = "1.4.1+0"
 # ╟─374567f6-c8f5-471a-82bb-70fa584f81bc
 # ╟─d537ff81-2855-4f42-8c95-9414956df95f
 # ╟─a8d56745-0de1-46c7-ad3e-e5129a199557
-# ╟─d2016b05-cbac-4181-8ba7-9761aa025164
 # ╟─00000000-0000-0000-0000-000000000001
 # ╟─00000000-0000-0000-0000-000000000002

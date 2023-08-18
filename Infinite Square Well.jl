@@ -20,10 +20,10 @@ macro bind(def, element)
 end
 
 # ╔═╡ b1697430-d9bd-40ef-aaa1-61ae93f8392a
-using Plots, PlutoUI, LinearAlgebra, Printf
+using Plots, PlutoUI, LinearAlgebra, Printf, PlutoArticles
 
-# ╔═╡ 7c59ef82-30f3-47b7-b1a4-e2d86cd68c6c
-include("article-view.jl")
+# ╔═╡ df8862c2-1842-4166-acb9-1ec52d1e532e
+article()
 
 # ╔═╡ f9c54af0-ce43-11ec-132b-c7aa64d62fb1
 md"""
@@ -199,11 +199,13 @@ PLUTO_PROJECT_TOML_CONTENTS = """
 [deps]
 LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
 Plots = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
+PlutoArticles = "f6bf48b7-86ff-4272-ae2d-6d953707ade4"
 PlutoUI = "7f904dfe-b85e-4ff6-b463-dae2292396a8"
 Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
 
 [compat]
 Plots = "~1.38.16"
+PlutoArticles = "~0.0.1"
 PlutoUI = "~0.7.51"
 """
 
@@ -213,7 +215,7 @@ PLUTO_MANIFEST_TOML_CONTENTS = """
 
 julia_version = "1.9.0"
 manifest_format = "2.0"
-project_hash = "8f0fdef458fb7759e257570eb0d9e742a918e393"
+project_hash = "a5ebb5eeeca81446b373a8a818e2e4b4ede09a00"
 
 [[deps.AbstractPlutoDingetjes]]
 deps = ["Pkg"]
@@ -797,6 +799,12 @@ version = "1.38.16"
     ImageInTerminal = "d8c32880-2388-543b-8c61-d9f865259254"
     Unitful = "1986cc42-f94f-5a68-af5c-568840ba703d"
 
+[[deps.PlutoArticles]]
+deps = ["AbstractPlutoDingetjes", "HypertextLiteral", "InteractiveUtils", "Markdown", "Reexport"]
+git-tree-sha1 = "df61ed14959da1e0f6b8e25f63db5ab6ba071125"
+uuid = "f6bf48b7-86ff-4272-ae2d-6d953707ade4"
+version = "0.0.1"
+
 [[deps.PlutoUI]]
 deps = ["AbstractPlutoDingetjes", "Base64", "ColorTypes", "Dates", "FixedPointNumbers", "Hyperscript", "HypertextLiteral", "IOCapture", "InteractiveUtils", "JSON", "Logging", "MIMEs", "Markdown", "Random", "Reexport", "URIs", "UUIDs"]
 git-tree-sha1 = "b478a748be27bd2f2c73a7690da219d0844db305"
@@ -1239,6 +1247,7 @@ version = "1.4.1+0"
 """
 
 # ╔═╡ Cell order:
+# ╟─df8862c2-1842-4166-acb9-1ec52d1e532e
 # ╟─f9c54af0-ce43-11ec-132b-c7aa64d62fb1
 # ╟─aaf60729-7676-4697-b639-ad3584000f4b
 # ╟─565245d6-2ed3-4b2a-83cf-7f20cefc5179
@@ -1268,6 +1277,5 @@ version = "1.4.1+0"
 # ╠═b638ca63-8fb9-400f-8f8b-7af5daa5f5fa
 # ╠═3421a4f7-54d3-4d67-aa00-f28f7a8487a0
 # ╠═62e003b2-6912-4aa7-abb5-3e14f8c25b81
-# ╟─7c59ef82-30f3-47b7-b1a4-e2d86cd68c6c
 # ╟─00000000-0000-0000-0000-000000000001
 # ╟─00000000-0000-0000-0000-000000000002

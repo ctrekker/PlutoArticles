@@ -9,10 +9,10 @@ using Markdown
 using InteractiveUtils
 
 # ╔═╡ 711d78c7-d81d-44fa-947d-1eca054f1661
-using Plots, PlutoUI, HypertextLiteral
+using Plots, PlutoUI, HypertextLiteral, PlutoArticles
 
-# ╔═╡ 138295e8-fbe6-4bca-a72e-c1a8ceeaf6d4
-include("article-view.jl")
+# ╔═╡ e75d743e-ccf5-4344-91f1-bd4802209f38
+article()
 
 # ╔═╡ d1056174-ca79-486e-be2d-defa429000ad
 html"""
@@ -121,11 +121,13 @@ PLUTO_PROJECT_TOML_CONTENTS = """
 [deps]
 HypertextLiteral = "ac1192a8-f4b3-4bfe-ba22-af5b92cd3ab2"
 Plots = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
+PlutoArticles = "f6bf48b7-86ff-4272-ae2d-6d953707ade4"
 PlutoUI = "7f904dfe-b85e-4ff6-b463-dae2292396a8"
 
 [compat]
 HypertextLiteral = "~0.9.4"
 Plots = "~1.38.15"
+PlutoArticles = "~0.0.1"
 PlutoUI = "~0.7.52"
 """
 
@@ -135,7 +137,7 @@ PLUTO_MANIFEST_TOML_CONTENTS = """
 
 julia_version = "1.9.0"
 manifest_format = "2.0"
-project_hash = "4cd41465961be6404d54959372e107a0de761455"
+project_hash = "23e7078e1439429ddc2342c53770f9bd25c6d800"
 
 [[deps.AbstractPlutoDingetjes]]
 deps = ["Pkg"]
@@ -721,6 +723,12 @@ version = "1.38.15"
     ImageInTerminal = "d8c32880-2388-543b-8c61-d9f865259254"
     Unitful = "1986cc42-f94f-5a68-af5c-568840ba703d"
 
+[[deps.PlutoArticles]]
+deps = ["AbstractPlutoDingetjes", "HypertextLiteral", "InteractiveUtils", "Markdown", "Reexport"]
+git-tree-sha1 = "df61ed14959da1e0f6b8e25f63db5ab6ba071125"
+uuid = "f6bf48b7-86ff-4272-ae2d-6d953707ade4"
+version = "0.0.1"
+
 [[deps.PlutoUI]]
 deps = ["AbstractPlutoDingetjes", "Base64", "ColorTypes", "Dates", "FixedPointNumbers", "Hyperscript", "HypertextLiteral", "IOCapture", "InteractiveUtils", "JSON", "Logging", "MIMEs", "Markdown", "Random", "Reexport", "URIs", "UUIDs"]
 git-tree-sha1 = "e47cd150dbe0443c3a3651bc5b9cbd5576ab75b7"
@@ -1161,6 +1169,7 @@ version = "1.4.1+0"
 """
 
 # ╔═╡ Cell order:
+# ╟─e75d743e-ccf5-4344-91f1-bd4802209f38
 # ╟─d1056174-ca79-486e-be2d-defa429000ad
 # ╟─72f370eb-556e-470f-8d04-e6b562f21ce7
 # ╟─8cdd9e01-f7d5-4813-8f99-07a03e4617bc
@@ -1182,6 +1191,5 @@ version = "1.4.1+0"
 # ╟─78ee5c84-cce4-4aac-ac90-1d65a0407ae3
 # ╟─a4feeff0-f7d9-48c1-ae51-4b0a9eaa7345
 # ╟─711d78c7-d81d-44fa-947d-1eca054f1661
-# ╟─138295e8-fbe6-4bca-a72e-c1a8ceeaf6d4
 # ╟─00000000-0000-0000-0000-000000000001
 # ╟─00000000-0000-0000-0000-000000000002
