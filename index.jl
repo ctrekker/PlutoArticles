@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.19.27
+# v0.19.36
 
 #> [frontmatter]
 #> title = "Connor's Interactive Articles"
@@ -14,6 +14,11 @@ using HypertextLiteral
 # ╔═╡ 1f301820-3aee-11ee-14eb-39a75a6a945b
 md"""
 # 📒 Connor's Interactive Articles 📒
+"""
+
+# ╔═╡ 37f0bf7b-644f-4f1f-95d8-3ba07e0e1f57
+md"""
+_Code for this repository can be found at [https://github.com/ctrekker/PlutoArticles](github.com/ctrekker/PlutoArticles)_
 """
 
 # ╔═╡ 2ba40e26-c809-4199-8b3d-2c7c76dd4e1e
@@ -84,7 +89,7 @@ HypertextLiteral = "~0.9.4"
 PLUTO_MANIFEST_TOML_CONTENTS = """
 # This file is machine-generated - editing it directly is not advised
 
-julia_version = "1.9.0"
+julia_version = "1.10.0"
 manifest_format = "2.0"
 project_hash = "fc304fba520d81fb78ea25b98f5762b4591b1182"
 
@@ -103,6 +108,7 @@ version = "0.1.7"
 # ╔═╡ Cell order:
 # ╟─1f301820-3aee-11ee-14eb-39a75a6a945b
 # ╟─ee7c9ca5-3754-4168-bd11-83dab9295fe4
+# ╟─37f0bf7b-644f-4f1f-95d8-3ba07e0e1f57
 # ╟─2ba40e26-c809-4199-8b3d-2c7c76dd4e1e
 # ╟─106c8995-9e6a-4017-9bbd-36ec9d54e154
 # ╟─aa31881f-e8a5-4fd1-8454-a5f6e527a573
