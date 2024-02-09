@@ -1,5 +1,19 @@
 {
     "sidebar": {
-        "title": "Connor's Interactive Notebooks"
+        "title": "Connor's Interactive Notebooks",
+        "elements": [
+            {
+                "type": "notebook",
+                "path": "Polarization Simulations.jl"
+            },
+            {
+                "type": "notebook",
+                "path": "Infinite Square Well.jl"
+            },
+            {
+                "type": "notebook",
+                "path": "Plinko Strategy.jl"
+            }
+        ]
     }
 }
